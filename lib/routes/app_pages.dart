@@ -1,5 +1,4 @@
 import 'package:flutter_template/pages/home/view.dart';
-import 'package:flutter_template/pages/splash/view.dart';
 import 'package:flutter_template/routes/app_routes.dart';
 import 'package:get/get.dart';
 
@@ -8,12 +7,7 @@ class AppPages {
 
   static final routes = [
     GetPage(
-      name: Routes.initial,
-      page: () => const SplashScreen(),
-      // binding: SplashBinding(),
-    ),
-    GetPage(
-      name: Routes.home,
+      name: AppRoutes.home,
       page: () => const HomeScreen(),
     ),
 
