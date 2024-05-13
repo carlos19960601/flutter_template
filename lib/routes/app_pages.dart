@@ -3,11 +3,15 @@ import 'package:flutter_template/routes/app_routes.dart';
 import 'package:get/get.dart';
 
 class AppPages {
+  static AppPages? _instance;
+
   AppPages._();
 
-  static final routes = [
+  factory AppPages() => _instance ??= AppPages._();
+
+  final routes = [
     GetPage(
-      name: AppRoutes.home,
+      name: AppRoutes().home,
       page: () => const HomeScreen(),
     ),
 

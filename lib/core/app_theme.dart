@@ -2,12 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_template/core/app_color.dart';
 
 class AppTheme {
-  const AppTheme._();
+  static AppTheme? _instance;
 
-  static ThemeData lightTheme = ThemeData(
+  AppTheme._();
+
+  factory AppTheme() => _instance ??= AppTheme._();
+
+  ThemeData lightTheme = ThemeData(
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
-        backgroundColor: AppColor.lightBlack,
+        backgroundColor: AppColor().lightBlack,
         padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 15),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),

@@ -1,5 +1,9 @@
 class AppRoutes {
+  static AppRoutes? _instance;
+
   AppRoutes._();
 
-  static const home = '/home';
+  factory AppRoutes() => _instance ??= AppRoutes._();
+
+  String home = '/home';
 }

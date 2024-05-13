@@ -1,16 +1,14 @@
-# flutter_template
 
-A new Flutter project.
+# How to change package name in flutter?
 
-## Getting Started
+https://stackoverflow.com/questions/51534616/how-to-change-package-name-in-flutter
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+# How can I change the app display name build with Flutter?
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+https://stackoverflow.com/questions/49353199/how-can-i-change-the-app-display-name-build-with-flutter
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+# Flutter: how to prevent device orientation changes and force portrait?
+
+https://stackoverflow.com/questions/49418332/flutter-how-to-prevent-device-orientation-changes-and-force-portrait
