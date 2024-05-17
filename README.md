@@ -12,3 +12,7 @@ https://stackoverflow.com/questions/49353199/how-can-i-change-the-app-display-na
 # Flutter: how to prevent device orientation changes and force portrait?
 
 https://stackoverflow.com/questions/49418332/flutter-how-to-prevent-device-orientation-changes-and-force-portrait
+
+```
+sudo gem install -n /usr/local/bin cocoapods
+```

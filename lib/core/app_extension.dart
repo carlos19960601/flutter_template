@@ -18,13 +18,11 @@ extension ColorHelper on BuildContext {
   Color get tertiary => colorScheme.onTertiary;
   Color get tertiaryContainer => colorScheme.tertiaryContainer;
   Color get onTertiaryContainer => colorScheme.onTertiaryContainer;
-  Color get surfaceVariant => colorScheme.surfaceVariant;
   Color get onSurfaceVariant => colorScheme.onSurfaceVariant;
   Color get surface => colorScheme.surface;
   Color get onSurface => colorScheme.onSurface;
   Color get surfaceTint => colorScheme.surfaceTint;
-  Color get background => colorScheme.background;
-  Color get onBackground => colorScheme.onBackground;
+  Color get onBackground => colorScheme.onSurface;
   Color get error => colorScheme.error;
   Color get shadow => colorScheme.shadow;
   Color get errorContainer => colorScheme.errorContainer;

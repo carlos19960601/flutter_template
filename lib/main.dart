@@ -1,6 +1,4 @@
-import 'package:device_preview/device_preview.dart';
 import 'package:dynamic_color/dynamic_color.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_template/core/app_storage.dart';
@@ -18,10 +16,7 @@ void main() async {
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,
   ]);
-  runApp(DevicePreview(
-    enabled: !kReleaseMode,
-    builder: (BuildContext context) => const MyApp(),
-  ));
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -38,8 +33,8 @@ class MyApp extends StatelessWidget {
       builder: (context, value, child) {
         final ThemeMode themeMode = ThemeMode
             .values[value.get(SettingBoxKey.themeModeKey, defaultValue: 0)];
-        final int color = value.get(SettingBoxKey.primaryColorKey,
-            defaultValue: const Color(0xff3FA796));
+        final int color =
+            value.get(SettingBoxKey.primaryColorKey, defaultValue: 0xff3FA796);
         final String fontFamily =
             value.get(SettingBoxKey.appFontFamilyKey, defaultValue: "Nunito");
         final Color primaryColor = Color(color);
