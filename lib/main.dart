@@ -6,7 +6,7 @@ import 'package:flutter_template/core/app_storage.dart';
 import 'package:flutter_template/core/app_theme.dart';
 import 'package:flutter_template/core/constants/constants.dart';
 import 'package:flutter_template/localization/messages.dart';
-import 'package:flutter_template/pages/home/view.dart';
+import 'package:flutter_template/pages/scroll2/view.dart';
 import 'package:get/route_manager.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
@@ -66,7 +66,7 @@ class MyApp extends StatelessWidget {
               locale: const Locale("zh", "CN"),
               fallbackLocale: const Locale("en", "US"),
               translations: Messages(),
-              home: const HomeScreen(),
+              home: const Scroll2Page(),
             );
           },
         );
