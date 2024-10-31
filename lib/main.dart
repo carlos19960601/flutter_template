@@ -1,4 +1,5 @@
 import 'package:dynamic_color/dynamic_color.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_template/core/app_storage.dart';
@@ -55,6 +56,9 @@ class MyApp extends StatelessWidget {
             }
 
             return GetMaterialApp(
+              scrollBehavior: const MaterialScrollBehavior().copyWith(
+                dragDevices: PointerDeviceKind.values.toSet(),
+              ),
               title: Constants.appName,
               themeMode: themeMode,
               theme: AppTheme().lightTheme(lightColorScheme, fontFamily),
